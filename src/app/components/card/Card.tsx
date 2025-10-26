@@ -6,6 +6,7 @@ interface CardProps {
     title: string;
     description: string;
     price: number;
+    inv: { [key: string]: number };
 }
 
 const Card: React.FC<CardProps> = ({ image, title, description, price }) => {
